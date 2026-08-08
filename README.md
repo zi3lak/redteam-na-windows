@@ -20,4 +20,4 @@ Kompletna ścieżka operacji red team w środowiskach **Windows i Active Directo
 Materiał **wyłącznie** do celów edukacyjnych, autoryzowanych testów bezpieczeństwa i budowania detekcji. Użycie opisanych technik bez pisemnej zgody właściciela systemu jest przestępstwem (art. 267–269 KK).
 
 ---
-*Edycje siostrzane: [🐧 Linux](https://github.com/zi3lak/redteam-na-linuxie) · [🍎 macOS](https://github.com/zi3lak/redteam-na-macos)*
+*Cykl siostrzany: [🐧 Linux](https://github.com/zi3lak/redteam-na-linuxie) · [🍎 macOS](https://github.com/zi3lak/redteam-na-macos) · [💀 Ransomware](https://github.com/zi3lak/redteam-ransomware)*

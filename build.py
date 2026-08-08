@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Konwersja kompendium Markdown -> kompletna, samodzielna strona HTML."""
+"""Konwersja kompendium Markdown -> kompletne, samodzielne strony HTML (PL + EN)."""
 import re
 from pathlib import Path
 
@@ -130,6 +130,23 @@ PAGES = [
         disclaimer_label="Zastrzeżenie:",
         disclaimer_text="materiał wyłącznie do celów edukacyjnych, autoryzowanych testów bezpieczeństwa i budowania detekcji. Użycie opisanych technik na systemach bez pisemnej zgody właściciela stanowi przestępstwo (m.in. art. 267–269 KK).",
         footer="Red Team na Windows — kompendium wiedzy ofensywnej i detekcyjnej &middot; stan na sierpień 2026",
+        lang_switch_href="index-en.html",
+        lang_switch_label="EN",
+    ),
+    dict(
+        lang="en",
+        md_file="Red Team on Windows - compendium.md",
+        out_file="index-en.html",
+        title="Red Team on Windows — an offensive and detection knowledge compendium",
+        description="The complete red team operation path in Windows and Active Directory environments: reconnaissance, privilege escalation, persistence, lateral movement, domain dominance, C2, detection.",
+        badge="Compendium &middot; August 2026",
+        hero_title="Red Team on Windows",
+        hero_sub="The complete offensive operation path in Windows and Active Directory: methodology, techniques, tools, C2 infrastructure, and the detection counterpoint — mapped to MITRE ATT&amp;CK.",
+        disclaimer_label="Disclaimer:",
+        disclaimer_text="this material is for educational purposes, authorized security testing, and detection engineering only. Using the described techniques on systems without the owner's written consent is a crime in most jurisdictions.",
+        footer="Red Team on Windows — an offensive and detection knowledge compendium &middot; as of August 2026",
+        lang_switch_href="index.html",
+        lang_switch_label="PL",
     ),
 ]
 
@@ -167,6 +184,7 @@ for page in PAGES:
   <nav>
     {toc_links}
   </nav>
+  <a class="lang-switch" href="{page['lang_switch_href']}">{page['lang_switch_label']}</a>
 </header>
 <section class="hero">
   <span class="badge">{page['badge']}</span>
